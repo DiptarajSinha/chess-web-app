@@ -20,7 +20,7 @@ A complete two-player Chess game implemented using **HTML**, **CSS**, and **Java
 
 ## 📸 Screenshots
 
-*`![Screenshot](web-app.png)`)*
+*`![Screenshot](web-app.png)`*
   
 ## 🛠️ Technologies Used
 
