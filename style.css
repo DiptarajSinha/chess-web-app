@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  user-select: none;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+}
+
+#turnIndicator {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.timers {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  grid-template-rows: repeat(8, 60px);
+  width: 480px;
+  margin: 0 auto 10px;
+  border: 2px solid #333;
+  background-color: #eee;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 44px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.light {
+  background-color: #f0d9b5;
+}
+
+.dark {
+  background-color: #b58863;
+}
+
+.selected {
+  outline: 3px solid yellow;
+}
+
+.highlight {
+  outline: 3px solid orange;
+}
+
+.captured {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.buttons {
+  margin-bottom: 10px;
+}
+
+button {
+  font-size: 18px;
+  padding: 5px 15px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 3px solid #333;
+  padding: 20px;
+  z-index: 1001;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.modal-content button {
+  font-size: 24px;
+  margin: 10px 15px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+#overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1000;
+}

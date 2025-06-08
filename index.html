@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Full Chess App with Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Two Player Chess</h1>
+
+  <div id="turnIndicator">White's turn</div>
+
+  <div class="timers">
+    <div>White Timer: <span id="whiteTimer">10:00</span></div>
+    <div>Black Timer: <span id="blackTimer">10:00</span></div>
+  </div>
+
+  <div class="chessboard" id="board"></div>
+
+  <div class="captured">
+    <div>White Captured: <span id="whiteCaptured"></span></div>
+    <div>Black Captured: <span id="blackCaptured"></span></div>
+  </div>
+
+  <div class="buttons">
+    <button id="undoBtn">Undo</button>
+    <button id="restartBtn">Restart</button>
+  </div>
+
+  <div id="promotionDialog" class="modal" style="display:none;">
+    <div class="modal-content">
+      <p>Select Promotion:</p>
+      <button data-piece="Q">Queen</button>
+      <button data-piece="R">Rook</button>
+      <button data-piece="B">Bishop</button>
+      <button data-piece="N">Knight</button>
+    </div>
+  </div>
+
+  <div id="overlay" style="display:none;"></div>
+
+  <script src="game.js"></script>
+</body>
+</html>
