@@ -21,6 +21,7 @@ A complete two-player Chess game implemented using **HTML**, **CSS**, and **Java
 ## 📸 Screenshots
 
 *`![Screenshot](web-app.png)`*
+![Game Start](web-app.png)
   
 ## 🛠️ Technologies Used
 
